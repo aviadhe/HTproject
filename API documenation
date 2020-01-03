@@ -1,0 +1,40 @@
+The first time running the server you need to run the command "npm install" (will install locally all relevant packages)
+
+To start server - "npm run devStart"
+    it should write to the console
+           server started
+           connected to database
+
+
+GET ALL ITEMS:
+    http://localhost:3005/services/
+
+GET FOOD ITEMS:
+    http://localhost:3005/services/food
+
+GET EVENT ITEMS:
+    http://localhost:3005/services/event
+
+
+POST FOOD ITEMS: (POST HTTP)
+    http://localhost:3005/services/food
+    header: {Content-Type:application/json}
+    body:   {
+            	"name":"מיכל עוגות",
+            	"location":{
+            				"x": 23.1,
+            				"y": -9.131
+            	}
+            }
+
+POST event ITEMS: (POST HTTP)
+    http://localhost:3005/services/event
+    header: {Content-Type:application/json}
+    body:   {
+            	"name":"הצגה לילדים במתנס",
+            	"location":{
+            				"x": -31.444,
+            				"y": 27.665
+            	}
+            }
+
